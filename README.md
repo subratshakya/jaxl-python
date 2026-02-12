@@ -117,7 +117,7 @@ This IVR will speak the message and then hangup the call.
 
 ```bash
 jaxl ivrs create \
-  --message "Hello, we are calling via Jaxl IVR demo created from CLI.  Will hang up after speaking this message." \
+  --message "Hello, we are calling via Jaxl IVR demo created from CLI.  Will hang up after speaking this message" \
   --hangup
 ```
 
