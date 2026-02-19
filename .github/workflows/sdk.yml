@@ -27,8 +27,9 @@ jobs:
       - name: Set up virtual environment
         run: |
           python -m venv .venv
-          source .venv/bin/activate                 
+          source .venv/bin/activate
           python -m pip install --upgrade pip "setuptools<81" wheel
+          pip install openai-whisper==20240930
           pip install -e .[dev,docs,types,app,grout,silence,transcribe,release]
       - name: Run mypy
         run: |
