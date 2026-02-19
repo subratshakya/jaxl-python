@@ -28,7 +28,7 @@ jobs:
         run: |
           python -m venv .venv
           source .venv/bin/activate                 
-          pip install --no-build-isolation -e .[dev,docs,types,app,grout,silence,transcribe,release]
+          pip install -e .[dev,docs,types,app,grout,silence,transcribe,release]
       - name: Run mypy
         run: |
           source .venv/bin/activate
